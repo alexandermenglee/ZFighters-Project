@@ -10,15 +10,18 @@ namespace ZFighters.Controllers
     public class FighterController : Controller
     {
       ApplicationDbContext context;
-      public FighterController()
-      {
-          context = new ApplicationDbContext();
-      }
+        public FighterController()
+        {
+           context = new ApplicationDbContext();
+        }
 
         // GET: Fighter
         public ActionResult Index()
         {
-            return View();
+           IEnumerable<Fighter> fighters = context.Fighters;
+
+
+            return View(fighters);
         }
 
         // GET: Fighter/Details/5
@@ -43,6 +46,7 @@ namespace ZFighters.Controllers
                 // TODO: Add insert logic here
                 context.Fighters.Add(fighter);
                 context.SaveChanges();
+
                 return RedirectToAction("Index");
             }
             catch
@@ -52,7 +56,7 @@ namespace ZFighters.Controllers
         }
 
         // GET: Fighter/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int id, string name)
         {
             return View();
         }

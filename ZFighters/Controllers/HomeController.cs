@@ -10,8 +10,10 @@ namespace ZFighters.Controllers
   {
     public ActionResult Index()
     {
+      ViewBag.Title = "DragonballZ Fighterz";
       return View();
     }
+    
 
     public ActionResult About()
     {
