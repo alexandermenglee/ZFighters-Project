@@ -192,6 +192,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\mystic-gohan-ssj3-goku.jpg" />
+    <Content Include="Content\images\ui-goku-1.jpg" />
     <Content Include="Content\images\ui-omen-goku.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
