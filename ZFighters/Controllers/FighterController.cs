@@ -27,7 +27,9 @@ namespace ZFighters.Controllers
         // GET: Fighter/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Fighter fighter = context.Fighters.Where(f => f.Id == id).Single();
+
+            return View(fighter);
         }
 
         // GET: Fighter/Create
@@ -58,6 +60,7 @@ namespace ZFighters.Controllers
         // GET: Fighter/Edit/5
         public ActionResult Edit(int id, string name)
         {
+            
             return View();
         }
 
