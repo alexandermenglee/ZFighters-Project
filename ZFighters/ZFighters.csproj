@@ -245,9 +245,12 @@
     <Content Include="Views\Fighter\Create.cshtml" />
     <Content Include="Views\Fighter\Index.cshtml" />
     <Content Include="Views\Fighter\Details.cshtml" />
+    <Content Include="Views\Fighter\Edit.cshtml" />
+    <Content Include="Views\Fighter\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\RedsCon\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
